@@ -1,0 +1,101 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>喜爱角色排序</title><style>
+*{box-sizing:border-box}:root{--accent:#df3673}body{margin:0;background:#edf0f3;color:#222;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif}button,input{font:inherit}button{cursor:pointer}.site-nav{position:sticky;top:0;z-index:1000;height:56px;background:#fff;border-bottom:1px solid #dfe3e8;display:flex;align-items:center;padding:0 20px;gap:24px}.site-nav a{text-decoration:none;color:#555;font-size:14px;padding:8px 4px}.site-nav a.active{color:#e62828;font-weight:800}.nav-brand{font-weight:900;color:#222!important;margin-right:auto}.actions{display:flex;gap:8px;flex-wrap:wrap}.actions button{border:1px solid #ddd;background:#fff;border-radius:8px;padding:8px 12px}.actions .primary{background:#e62828;color:#fff;border-color:#e62828}.wrap{max-width:1250px;margin:0 auto;padding:26px 18px 50px}.top{background:#fff;border:1px solid #ddd;border-radius:14px;padding:20px 22px;box-shadow:0 6px 20px #0000000a;margin-bottom:18px}.topline{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}.title{font-size:42px;font-weight:900;color:#000;margin:0}.subtitle{margin:7px 0 0;color:#777;font-size:13px;line-height:1.6}.name-input{margin-top:15px;display:flex;align-items:center;gap:10px;max-width:420px}.name-input label{font-size:13px;color:#666;white-space:nowrap}.name-input input{flex:1;border:1px solid #ddd;border-radius:8px;padding:9px 11px;outline:none}.board{background:#fff;border:1px solid #ddd;border-radius:16px;padding:24px;box-shadow:0 8px 26px #0000000d}.ranking-grid{display:flex;align-items:flex-end;justify-content:center;gap:14px;flex-wrap:wrap}.rank-card{position:relative;border:1px solid #d8d8d8;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 5px 16px #00000012;cursor:pointer;transition:.15s;flex:0 0 auto;width:var(--w);height:var(--h);display:flex;flex-direction:column}.rank-card:hover{transform:translateY(-4px);box-shadow:0 10px 25px #0000001c}.rank-card.active{outline:3px solid var(--accent);outline-offset:2px}.rank-no{position:absolute;left:8px;top:8px;z-index:2;min-width:34px;height:34px;padding:0 8px;border-radius:17px;background:#222;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;box-shadow:0 3px 8px #0004}.rank-card:nth-child(1) .rank-no{background:#e1a900}.rank-card:nth-child(2) .rank-no{background:#7e8791}.rank-card:nth-child(3) .rank-no{background:#a36b3d}.rank-img-wrap{flex:1;min-height:0;background:#f5f5f5;display:flex;align-items:center;justify-content:center;overflow:hidden}.rank-img{width:100%;height:100%;object-fit:cover;display:block}.rank-empty{color:#aaa;font-size:12px;text-align:center;padding:15px}.rank-logo{height:48px;flex:none;display:flex;align-items:center;justify-content:center;padding:4px 8px;border-top:1px solid #eee;background:#fff}.rank-logo img{max-width:96%;max-height:40px;object-fit:contain}.rank-info{padding:8px 7px 10px;text-align:center;border-top:1px solid #eee;min-height:55px}.rank-name{font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rank-band{font-size:9px;color:#888;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rank-role{font-size:9px;color:#666;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.hint{text-align:center;color:#999;font-size:11px;margin-top:15px}.modal{display:none;position:fixed;inset:0;z-index:3000;background:#0006;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.dialog{width:min(900px,calc(100vw - 30px));max-height:min(820px,calc(100vh - 30px));background:#fff;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 18px 60px #0005}.dialog-head{padding:14px 16px;border-bottom:1px solid #eee;display:flex;justify-content:space-between;align-items:center}.dialog-title{font-size:17px;font-weight:900}.close{border:0;background:#f3f3f3;border-radius:8px;padding:7px 10px}.choices{padding:14px;overflow:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.choice{display:flex;gap:9px;align-items:center;border:1px solid #ddd;border-radius:10px;padding:8px;background:#fff;text-align:left;min-width:0}.choice:hover,.choice.active{border-color:var(--accent);background:#fff5f8}.choice img{width:72px;height:103px;object-fit:contain;background:#f5f5f5;border-radius:6px;flex:none}.choice-name{font-size:13px;font-weight:900}.choice-role{font-size:10px;color:#777;margin-top:4px}.choice-band{font-size:9px;color:#999;margin-top:4px}@media(max-width:900px){.site-nav{gap:10px;padding:0 10px;overflow-x:auto;white-space:nowrap}.nav-brand{margin-right:5px}.wrap{padding:14px 9px 30px}.board{padding:12px}.ranking-grid{gap:9px}.rank-card{width:var(--mw);height:var(--mh)}.rank-logo{height:42px}.rank-logo img{max-height:34px}.rank-info{min-height:62px;padding:6px 5px}.rank-name{font-size:11px}.rank-band{font-size:8px}.choices{grid-template-columns:repeat(2,minmax(0,1fr));padding:10px}}@media(max-width:600px){.site-nav{height:auto;min-height:52px;flex-wrap:wrap;padding:7px 9px}.site-nav a{font-size:12px}.actions{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}.actions button{flex:0 0 auto}.title{font-size:32px}.name-input{max-width:none}.board{padding:8px}.ranking-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:end;gap:8px}.rank-card{width:100%;height:auto;aspect-ratio:3/4.4}.rank-card:nth-child(1){grid-column:1/-1;width:72%;justify-self:center;aspect-ratio:3/4.5}.rank-card:nth-child(2),.rank-card:nth-child(3){aspect-ratio:3/4.35}.rank-logo{height:38px}.rank-logo img{max-height:31px}.dialog{width:100%;max-height:90vh;border-radius:16px 16px 0 0}.modal{align-items:flex-end;padding:0}.choices{grid-template-columns:1fr;gap:8px}.choice img{width:82px;height:112px}}
+</style></head><body>
+<nav class="site-nav"><a class="nav-brand" href="index.html">GFR 乐队最爱</a><a href="band_favorite_role.html">最爱角色</a><a href="band_favorite_cv.html">最爱CV</a><a class="active" href="favorite_character_ranking.html">喜爱角色排序</a><a href="favorite_cv_ranking.html">喜爱CV排序</a></nav>
+<main class="wrap"><section class="top"><div class="topline"><div><h1 class="title">喜爱角色排序</h1><p class="subtitle">排名越靠前，角色框越大。点击任意角色框即可选择角色；每个排名都可以选择任意角色，允许重复。</p></div><div class="actions"><button id="randomBtn">随机填入</button><button id="resetBtn">恢复默认</button><button class="primary" id="pngBtn">导出 PNG</button></div></div><div class="name-input"><label for="nameInput">填表人</label><input id="nameInput" placeholder="填表人" maxlength="40"></div></section><section class="board"><div id="rankingGrid" class="ranking-grid"></div><div class="hint">点击角色框选择角色。框体大小代表喜爱程度排序，序号代表排名。</div></section></main>
+<div id="modal" class="modal"><div class="dialog"><div class="dialog-head"><div id="modalTitle" class="dialog-title">选择角色</div><button id="closeBtn" class="close">关闭</button></div><div id="choices" class="choices"></div></div></div>
+<script>
+const DATA={"characters":[{"id":"nina_iseri","band":"TOGENASHI TOGEARI","name":"井芹仁菜","role":"Vo.","theme":"#53B8E8","image":"./images/img_29e2906b764f6bc6.png"},{"id":"momoka_kawaragi","band":"TOGENASHI TOGEARI","name":"河原木桃香","role":"Gt.","theme":"#53B8E8","image":"./images/img_a893a0d70b70e986.png"},{"id":"subaru_awa","band":"TOGENASHI TOGEARI","name":"安和昴","role":"Dr.","theme":"#53B8E8","image":"./images/img_764c1c86b22bdf8a.png"},{"id":"tomo_ebizuka","band":"TOGENASHI TOGEARI","name":"海老塚智","role":"Key.","theme":"#53B8E8","image":"./images/img_f8cc19e765845ef9.png"},{"id":"rupa","band":"TOGENASHI TOGEARI","name":"Rupa","role":"Ba.","theme":"#53B8E8","image":"./images/img_48bb3273626e6dae.png"},{"id":"hina","band":"DIAMOND DUST","name":"HINA","role":"Vo.Gt.","theme":"#53B8E8","image":"./images/img_5f5ef9f2dfd61cae.png"},{"id":"nana","band":"DIAMOND DUST","name":"NANA","role":"Ba.","theme":"#53B8E8","image":"./images/img_2d3b1766acb82c0e.png"},{"id":"rin","band":"DIAMOND DUST","name":"RIN","role":"Gt.","theme":"#53B8E8","image":"./images/img_ed968d3abbfe8f8d.png"},{"id":"ai","band":"DIAMOND DUST","name":"AI","role":"Dr.","theme":"#53B8E8","image":"./images/img_c179c02679972009.png"},{"id":"kaede_kitsuta","band":"CANNA LILY","name":"橘田枫","role":"Vo.","theme":"#53B8E8","image":"./images/img_a22c48f05cdc5390.png"},{"id":"ayame_hoshi","band":"CANNA LILY","name":"星亚矢芽","role":"Gt.","theme":"#53B8E8","image":"./images/img_135909cd8fc8096d.png"},{"id":"rindo_chigasaki","band":"CANNA LILY","name":"千崎龙胆","role":"Dr.","theme":"#53B8E8","image":"./images/img_baecc0871994b60e.png"},{"id":"shion_sasakibara","band":"CANNA LILY","name":"榊原紫苑","role":"Ba.","theme":"#53B8E8","image":"./images/img_6394975d0c6237bb.png"},{"id":"nazuna_yukishima","band":"CANNA LILY","name":"雪志摩荠","role":"Key.","theme":"#53B8E8","image":"./images/img_80c936f1a43a61f0.png"},{"id":"ari_nakamura","band":"F-272","name":"中村有","role":"Dr.","theme":"#53B8E8","image":"./images/img_8c1d06b0cac5140d.png"},{"id":"koto_udagawa","band":"F-272","name":"宇田川琴","role":"Gt.","theme":"#53B8E8","image":"./images/img_be9f9d193b8b539d.png"},{"id":"hazuki_kuromiya","band":"F-272","name":"黑宫八月","role":"Gt.","theme":"#53B8E8","image":"./images/img_8ce5a4fa09268311.png"},{"id":"momono_asai","band":"F-272","name":"浅井萌萌乃","role":"Ba.","theme":"#53B8E8","image":"./images/img_30c464d9017a6cbb.png"},{"id":"saki_kato","band":"F-272","name":"加藤嗄生","role":"Vo.","theme":"#53B8E8","image":"./images/img_4b1b626a7aeaaedd.png"},{"id":"wakaba_wakahori","band":"クズミミズク","name":"若堀若叶","role":"Vo.Gt.","theme":"#53B8E8","image":"./images/img_f50113183d28534f.png"},{"id":"su_iitoyo","band":"クズミミズク","name":"饭丰澄羽","role":"Gt.Vo.","theme":"#53B8E8","image":"./images/img_444cb4ea6fb22cf9.png"},{"id":"karuta_otozu","band":"クズミミズク","name":"乙津歌留多","role":"Ba.","theme":"#53B8E8","image":"./images/img_2b5bdcd0ca9ff64e.png"},{"id":"fuka_ustugi","band":"クズミミズク","name":"卯木风薰","role":"Dr.","theme":"#53B8E8","image":"./images/img_dc97fe008c9f1cde.png"},{"id":"shino_yatsumine","band":"クズミミズク","name":"八峰志乃","role":"Key.","theme":"#53B8E8","image":"./images/img_a350272ebd995803.png"}]};
+const FIXED_LOGOS=["./images/img_0630ddca090bbd6e.png","images/img_fb7e35b6140f947b.png","images/img_ada8197b8f7e19bd.png","images/img_13185af10feeac5d.png","images/img_7a9fcbf23b6c608e.png"];
+const BAND_ORDER=["TOGENASHI TOGEARI","DIAMOND DUST","CANNA LILY","F-272","クズミミズク"];
+const CHARS={}; DATA.characters.forEach(c=>CHARS[c.id]=c);
+const ranks=10;
+const sizes=[
+  [330,470],[285,410],[275,395],[245,350],[235,335],[225,320],[215,305],[205,290],[195,275],[185,260]
+];
+const state={title:"",selected:Array(ranks).fill(null)};
+let activeRank=0;
+function esc(v){return String(v).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function logoFor(c){if(!c)return "";const i=BAND_ORDER.indexOf(c.band);return i>=0?FIXED_LOGOS[i]:""}
+function save(){localStorage.setItem('gfrFavoriteRanking',JSON.stringify(state))}
+function load(){try{const x=JSON.parse(localStorage.getItem('gfrFavoriteRanking'));if(x&&Array.isArray(x.selected)&&x.selected.length===ranks)state.selected=x.selected.map(id=>id&&CHARS[id]?id:null);state.title=x?.title||''}catch(e){}}
+function render(){
+  nameInput.value=state.title||'';
+  const grid=document.getElementById('rankingGrid');grid.innerHTML='';
+  state.selected.forEach((id,i)=>{const c=id?CHARS[id]:null, card=document.createElement('div');card.className='rank-card'+(i===activeRank?' active':'');
+    const [w,h]=sizes[i];card.style.setProperty('--w',w+'px');card.style.setProperty('--h',h+'px');card.style.setProperty('--mw',Math.max(125,w*.68)+'px');card.style.setProperty('--mh',Math.max(185,h*.68)+'px');
+    const logo=logoFor(c);card.innerHTML=`<div class="rank-no">${i+1}</div><div class="rank-img-wrap">${c?`<img class="rank-img" src="${c.image}">`:`<div class="rank-empty">点击选择角色</div>`}</div><div class="rank-logo">${logo?`<img src="${logo}">`:`<span style="font-size:9px;color:#aaa">所属乐队 LOGO</span>`}</div><div class="rank-info">${c?`<div class="rank-name">${esc(c.name)}</div><div class="rank-role">担当：${esc(c.role||'')}</div><div class="rank-band">${esc(c.band)}</div>`:`<div class="rank-name" style="color:#aaa">未选择</div><div class="rank-band">第${i+1}名</div>`}</div>`;
+    card.onclick=()=>openModal(i);grid.appendChild(card);
+  });save();
+}
+function openModal(i){activeRank=i;const modal=document.getElementById('modal'),list=document.getElementById('choices');document.getElementById('modalTitle').textContent=`第 ${i+1} 名 · 选择角色`;
+ list.innerHTML=DATA.characters.map(c=>`<button type="button" class="choice ${state.selected[i]===c.id?'active':''}" data-id="${esc(c.id)}"><img src="${c.image}"><span><span class="choice-name">${esc(c.name)}</span><span class="choice-role">担当：${esc(c.role||'')}</span><span class="choice-band">${esc(c.band)}</span></span></button>`).join('');
+ list.querySelectorAll('.choice').forEach(el=>el.addEventListener('click',()=>{state.selected[i]=el.dataset.id;closeModal();render()}));modal.classList.add('open');}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+nameInput.oninput=e=>{state.title=e.target.value;render()};
+document.getElementById('closeBtn').onclick=closeModal;document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+document.getElementById('randomBtn').onclick=()=>{state.selected=Array.from({length:ranks},()=>DATA.characters[Math.floor(Math.random()*DATA.characters.length)].id);render()};
+document.getElementById('resetBtn').onclick=()=>{localStorage.removeItem('gfrFavoriteRanking');location.reload()};
+async function loadImg(src){
+  return await new Promise((resolve,reject)=>{
+    const i=new Image();
+    i.onload=async()=>{try{if(i.decode) await i.decode()}catch(e){};resolve(i)};
+    i.onerror=()=>reject(new Error('图片加载失败：'+src));
+    i.src=src;
+  });
+}
+async function downloadCanvasPNG(canvas,filename){
+  return new Promise((resolve,reject)=>{
+    canvas.toBlob(async blob=>{
+      if(!blob){reject(new Error('PNG生成失败'));return}
+      try{
+        const file=new File([blob],filename,{type:'image/png'});
+        // 手机端：优先直接把生成的图片交给系统分享/保存面板。
+        // 若浏览器不支持文件分享，则直接打开图片，用户可长按保存到相册。
+        if(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)){
+          if(navigator.share && navigator.canShare && navigator.canShare({files:[file]})){
+            await navigator.share({files:[file],title:filename});
+            resolve();return;
+          }
+          const url=URL.createObjectURL(blob);
+          const w=window.open('', '_blank');
+          if(w){
+            w.document.write('<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>导出的图片</title></head><body style="margin:0;background:#222;display:flex;align-items:center;justify-content:center;min-height:100vh"><img src="'+url+'" style="max-width:100%;height:auto;display:block"></body></html>');
+            w.document.close();
+            resolve();return;
+          }
+          const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),5000);resolve();return;
+        }
+        // 桌面端：正常下载 PNG 文件。
+        const url=URL.createObjectURL(blob);
+        const a=document.createElement('a');a.download=filename;a.href=url;a.style.display='none';document.body.appendChild(a);a.click();
+        setTimeout(()=>{URL.revokeObjectURL(url);a.remove();resolve()},1000);
+      }catch(err){reject(err)}
+    },'image/png');
+  });
+}
+function rr(ctx,x,y,w,h,r){r=Math.min(r,w/2,h/2);ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath()}
+async function exportPNG(){
+ const W=1080,pad=28,gap=14,topH=132,cols=3;
+ const innerW=W-pad*2;
+ const baseCardW=(innerW-gap*(cols-1))/cols;
+ const rankScale=[1.18,1.08,1.03,0.98,0.95,0.92,0.89,0.86,0.83,0.80];
+ const cardWs=rankScale.map(v=>baseCardW*v);
+ const cardHs=cardWs.map(w=>w*1.48);
+ const rows=[[0],[1,2],[3,4,5],[6,7,8,9]];
+ const rowHeights=rows.map(row=>Math.max(...row.map(i=>cardHs[i])));
+ const H=pad+topH+rowHeights.reduce((a,b)=>a+b,0)+gap*(rows.length-1)+pad;
+ const cv=document.createElement('canvas');cv.width=W*2;cv.height=H*2;const ctx=cv.getContext('2d');ctx.scale(2,2);
+ ctx.fillStyle='#f5f3ee';ctx.fillRect(0,0,W,H);ctx.fillStyle='#fff';rr(ctx,pad/2,pad/2,W-pad,H-pad,22);ctx.fill();
+ ctx.textAlign='center';ctx.fillStyle='#000';ctx.font='900 48px Arial';ctx.fillText((state.title||'')+'的喜爱'+(document.title.includes('CV')?'CV':'角色')+'排序',W/2,pad+50);
+ ctx.fillStyle='#777';ctx.font='15px sans-serif';ctx.fillText('排名越靠前，框体越大',W/2,pad+82);
+ let y=pad+topH;
+ const drawCard=async(i,x,rowY,w,h)=>{const c=state.selected[i]?CHARS[state.selected[i]]:null,logo=logoFor(c);ctx.save();rr(ctx,x,rowY,w,h,14);ctx.clip();let infoH=68,logoH=46,picH=h-logoH-infoH;
+ if(c){let im=await loadImg(c.image);const ar=im.width/im.height;let dw=w,dh=w/ar;if(dh>picH){dh=picH;dw=dh*ar}ctx.drawImage(im,x+(w-dw)/2,rowY+(picH-dh)/2,dw,dh)}else{ctx.fillStyle='#f5f5f5';ctx.fillRect(x,rowY,w,picH);ctx.fillStyle='#aaa';ctx.font='16px sans-serif';ctx.textAlign='center';ctx.fillText('未选择',x+w/2,rowY+picH/2)}
+ ctx.fillStyle='#fff';ctx.fillRect(x,rowY+picH,w,logoH);if(logo){let li=await loadImg(logo),r=Math.min(w*.88/li.width,logoH*.76/li.height),lw=li.width*r,lh=li.height*r;ctx.drawImage(li,x+(w-lw)/2,rowY+picH+(logoH-lh)/2,lw,lh)}
+ ctx.fillStyle='#fff';ctx.fillRect(x,rowY+picH+logoH,w,infoH);ctx.textAlign='center';ctx.fillStyle='#222';ctx.font='900 '+Math.max(15,w/20)+'px Arial';ctx.fillText(c?c.name:'未选择',x+w/2,rowY+picH+logoH+20);ctx.fillStyle='#666';ctx.font='11px sans-serif';ctx.fillText(c?'担当：'+(c.role||''):'',x+w/2,rowY+picH+logoH+38);ctx.fillStyle='#999';ctx.font='9px sans-serif';ctx.fillText(c?c.band:'',x+w/2,rowY+picH+logoH+54);
+ ctx.fillStyle='#222';ctx.font='900 16px Arial';ctx.textAlign='left';ctx.fillText('第'+(i+1)+'名',x+8,rowY+21);ctx.restore();ctx.strokeStyle='#ddd';rr(ctx,x,rowY,w,h,14);ctx.stroke()};
+ for(let r=0;r<rows.length;r++){const row=rows[r];const total=row.reduce((a,i)=>a+cardWs[i],0)+gap*(row.length-1);let x=(W-total)/2;for(const i of row){await drawCard(i,x,y,cardWs[i],cardHs[i]);x+=cardWs[i]+gap}y+=rowHeights[r]+gap}
+ await downloadCanvasPNG(cv,'gfrbandsuki_ranking.png');}
+document.getElementById('pngBtn').onclick=exportPNG;load();render();
+</script></body></html>
